@@ -6,7 +6,7 @@ $config = parse_ini_file('config.ini');
 $dbSuccess = false;
 $dbVersion = false;
 
-// Connect to SQL Server
+// Connect to the SQL Server
 $conn = @new mysqli($config['hostname'], $config['username'], $config['password'], $config['dbname']);
 
 if ($conn->connect_errno) {
